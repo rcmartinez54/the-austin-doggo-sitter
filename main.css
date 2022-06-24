@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Martel', serif;
+    font-family: 'Staatliches', cursive;
+}
+
+header img {
+    width: 10%;
+}
+
+nav .nav_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    
+}
+
+nav .nav_items li {
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+nav .nav_items a {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    background: url('IMG/dogsOnLeash.jpg') fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+#about, #services {
+    height: 100vh;
