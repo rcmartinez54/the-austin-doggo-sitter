@@ -100,6 +100,10 @@ section {
     #about {
         padding: 40px;
     }
+
+    #about p {
+        font-size: 16px;
+    }
 }
 
 #services {
