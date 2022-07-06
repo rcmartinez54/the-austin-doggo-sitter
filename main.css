@@ -1,4 +1,7 @@
-* {
+header, 
+footer,
+#services,
+#gallery {
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Martel', serif;
     font-family: 'Staatliches', cursive; 
@@ -8,7 +11,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .15);
     position: fixed;
     width: 96%;
     padding: 20px;
@@ -53,6 +56,10 @@ nav .nav_items a {
     justify-content: end;
 }
 
+#mediaHero {
+    display: none;
+}
+
 @media screen and (max-width: 500px) {
     #hero, header {
         display: none;
@@ -80,22 +87,39 @@ section {
 
 #about {
     background: #fff;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Martel', serif;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Raleway', sans-serif;
+    padding: 100px;
+}
+
+#about p {
+    font-size: 28px;
+    font-weight: bolder;
 }
 
 #services {
-    background: #BF5700;
     display: flex;
+    flex-direction: column;
+    background: rgba(191, 87, 0, .2);
+    padding: 100px;
+}
+
+#services span {
+    display: none;
+    /* width: 100%;
+    background: #BF5700;
+    color: #fff;
     align-items: center;
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    font-size: 32px; */
 }
 
 #services .img-container {
     display: flex;
-    width: 100%;
     justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #000;
 }
 
 #services .img-container div {
@@ -121,11 +145,25 @@ section {
 
 #gallery {
     display: flex;
+    flex-direction: column;
+}
+
+#gallery span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    background: rgba(191, 87, 0, .7);
+    padding-top: 50px;
+}
+
+.galContainer {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    height: fit-content;
-}
+    background: rgba(191, 87, 0, .7);
+} 
 
 .galleryContain {
     width: 20%;
@@ -135,26 +173,18 @@ section {
 .doggoImg {
     width: 100%;
     border: #000 solid 2px;
+    box-shadow: 4px 4px 8px #000;
 }
 
 .doggoBio {
     display: flex;
     justify-content: center;
-}
-
-.placeHolder {
-    height: 365px;
-    background: url('IMG/stock.png');
-    color: #fff;
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 2px 2px 2px #000;
+    font-size: 28px;
 }
 
 .holderBio {
-    color: #fff;
+    color: rgba(191, 87, 0, .01);
+    font-size: 28px;
 }
 
 #testimonials {
@@ -168,16 +198,35 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 30px;
 }
 
 footer span {
-    font-size: 22px;
+    font-size: 28px;
 }
 
-footer img {
+footer a {
     width: 4%;
 }
 
-@media screen and (max-width: 500px) {
+footer img {
+    width: 100%;
+}
 
+@media screen and (max-width: 500px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer h2 {
+        font-size: 15px;
+    }
+
+    footer span {
+        font-size: 20px;
+    }
+
+    footer a {
+        width: 20%;
+    }
 }
