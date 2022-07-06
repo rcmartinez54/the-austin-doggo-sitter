@@ -180,7 +180,7 @@ section {
     display: flex;
     justify-content: center;
     font-size: 55px;
-    background: rgba(191, 87, 0, .7);
+    /* background: rgba(191, 87, 0, .7); */
     padding-top: 50px;
     font-family: 'The Nautigal', cursive;
 }
@@ -190,7 +190,8 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    background: rgba(191, 87, 0, .7);
+    background: #fff;
+    /* border:10px solid rgba(191, 87, 0, .7); */
 } 
 
 .galleryContain {
