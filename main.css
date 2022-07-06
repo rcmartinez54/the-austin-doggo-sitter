@@ -133,9 +133,18 @@ section {
 }
 
 @media screen and (max-width: 500px) {
+
+    #services {
+        padding: 35px;
+    }
+
     #services .img-container {
         flex-direction: column;
         padding: 50px;
+    }
+
+    #services img {
+        padding-top: 10px;
     }
 }
 
@@ -185,6 +194,13 @@ section {
 .holderBio {
     color: rgba(191, 87, 0, .01);
     font-size: 28px;
+}
+
+@media screen and (max-width: 500px) {
+    .galleryContain {
+        width: 80%;
+        padding: 0;
+    }
 }
 
 #testimonials {
