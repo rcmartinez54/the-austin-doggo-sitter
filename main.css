@@ -1,11 +1,11 @@
 header {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    background: transparent;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
     position: fixed;
-    width: 100%;
-    padding-top: 20px;
+    width: 96%;
+    padding: 20px;
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Martel', serif;
     font-family: 'Staatliches', cursive;
@@ -43,7 +43,39 @@ nav .nav_items a {
     background: url('IMG/dogsOnLeash.jpg') fixed;
     background-size: cover;
     height: 100vh;
+    align-items: flex-end;
+    justify-content: end;
 }
 
-#about, #services {
+#hero .IG {
+    height: 15%;
+    padding: 20px;
+}
+
+section {
     height: 100vh;
+}
+
+#about {
+    background: #fff;
+}
+
+#services {
+    background: #BF5700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#services .img-container {
+    display: flex;
+}
+
+#testimonials {
+    background: #fff;
+}
+
+footer {
+    background: black;
+    color: #fff;
+}
