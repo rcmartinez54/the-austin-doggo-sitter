@@ -79,6 +79,10 @@ nav .nav_items a {
     #mediaHero img {
         width: 50%;
     }
+
+    nav .nav_items li {
+        font-size: 10px;
+    }
 }
 
 #hero .IG {
