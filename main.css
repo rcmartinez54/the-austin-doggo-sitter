@@ -96,6 +96,12 @@ section {
     font-weight: bolder;
 }
 
+@media screen and (max-width: 500px) {
+    #about {
+        padding: 40px;
+    }
+}
+
 #services {
     display: flex;
     flex-direction: column;
