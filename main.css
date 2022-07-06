@@ -61,9 +61,14 @@ nav .nav_items a {
 }
 
 @media screen and (max-width: 500px) {
-    #hero, header {
+    #hero, #header {
         display: none;
     }
+
+    #mediaHeader {
+        background: transparent;
+    }
+
     #mediaHero {
         display: flex;
         align-items: center;
@@ -109,8 +114,9 @@ section {
 #services {
     display: flex;
     flex-direction: column;
-    background: rgba(191, 87, 0, .2);
     padding: 100px;
+    background: url('IMG/ATX.jpg') fixed;
+    background-size: cover;
 }
 
 #services span {
@@ -130,6 +136,8 @@ section {
     align-items: center;
     padding: 20px;
     box-shadow: 5px 5px 10px #000;
+    /* background: rgba(191, 87, 0, .8); */
+    background: #fff;
 }
 
 #services .img-container div {
@@ -171,9 +179,10 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 42px;
+    font-size: 55px;
     background: rgba(191, 87, 0, .7);
     padding-top: 50px;
+    font-family: 'The Nautigal', cursive;
 }
 
 .galContainer {
