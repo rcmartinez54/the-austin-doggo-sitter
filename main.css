@@ -61,7 +61,7 @@ nav .nav_items a {
 }
 
 @media screen and (max-width: 500px) {
-    #hero, #header {
+    #hero, #header, header Img {
         display: none;
     }
 
