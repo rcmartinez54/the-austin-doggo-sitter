@@ -166,7 +166,7 @@ section {
 @media screen and (max-width: 500px) {
 
     #services {
-        padding: 35px;
+        padding: 10px;
     }
 
     #services .img-container {
