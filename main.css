@@ -65,6 +65,10 @@ nav .nav_items a {
         display: none;
     }
 
+    header {
+        padding: 0;
+    }
+
     #mediaHeader {
         background: transparent;
     }
