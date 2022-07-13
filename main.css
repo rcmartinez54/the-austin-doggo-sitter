@@ -267,6 +267,7 @@ footer img {
 @media screen and (max-width: 500px) {
     footer {
         flex-direction: column;
+        text-decoration: none;
     }
 
     footer h2 {
