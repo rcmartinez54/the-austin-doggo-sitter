@@ -1,3 +1,23 @@
+
+
+function fadeHero() {
+    $(document).ready(function() {
+        (function () {
+            $('#hero h1').fadeIn(500, function () {
+                $('#hero h2').delay(1000).fadeIn(500);
+            });
+        });
+    });
+}
+
+// $(document).ready(function() {
+//     (function () {
+//         $('#hero h1').fadeIn(500, function () {
+//             $('#hero h2').delay(1000).fadeIn(500);
+//         });
+//     })();
+// });
+
 function fadeNavOnScroll() {
     $(window).scroll(function() {
         if ($(document).scrollTop() > 100) {
@@ -5,6 +25,15 @@ function fadeNavOnScroll() {
         } else {
             $('#header').fadeIn(400);
         }
+    });
+}
+
+function fadeAbout() {
+    $(window).scroll(function() {
+        $('.about_header').fadeIn(500, function() {
+            $('.aboutP').delay(1000).fadeIn(500);
+        });
+        
     });
 }
 
@@ -33,6 +62,8 @@ $('a[href^="#"]').on('click', function(event) {
 function handler () {
     fadeNavOnScroll();
     smoothScroll();
+    fadeAbout();
+    fadeHero();
 }
 
 $(handler);
