@@ -49,11 +49,21 @@ nav .nav_items a {
 #hero {
     display: flex;
     justify-content: center;
-    background: url('IMG/heroMain.png') fixed;
+    background: url('IMG/hero10.png') fixed;
     background-size: cover;
     height: 100vh;
-    align-items: flex-end;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Yellowtail', cursive;
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    flex-direction: column;
+}
+
+#hero h1,
+#hero h2 {
+    margin: 0;
 }
 
 #mediaHero {
@@ -100,13 +110,19 @@ section {
 
 #about {
     background: #fff;
-    font-family: 'Raleway', sans-serif;
     padding: 100px;
 }
 
 #about p {
     font-size: 28px;
     font-weight: bolder;
+    font-family: 'Source Sans Pro', Sans-Serif;
+}
+
+#about .about_header {
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: 'Playfair Display', Serif;
 }
 
 @media screen and (max-width: 500px) {
@@ -123,7 +139,7 @@ section {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: url('IMG/ATX.jpg') fixed;
+    /* background: url('IMG/ATX.jpg') fixed; */
     background-size: cover;
 }
 
@@ -186,16 +202,22 @@ section {
 #gallery {
     display: flex;
     flex-direction: column;
+    
+}
+
+#gallery span,
+.galContainer {
+    background: rgba(0, 0, 0, .85);
 }
 
 #gallery span {
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 55px;
-    /* background: rgba(191, 87, 0, .7); */
-    padding-top: 50px;
+    font-size: 85px;
+    padding: 50px 0;
     font-family: 'The Nautigal', cursive;
+    color: #fff;
 }
 
 .galContainer {
@@ -203,25 +225,26 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    background: #fff;
-    /* border:10px solid rgba(191, 87, 0, .7); */
+    padding-bottom: 200px;
 } 
 
 .galleryContain {
-    width: 20%;
-    padding: 20px;
+    width: 24%;
 }
 
 .doggoImg {
     width: 100%;
-    border: #000 solid 2px;
-    box-shadow: 4px 4px 8px #000;
+    
 }
 
 .doggoBio {
     display: flex;
     justify-content: center;
     font-size: 28px;
+}
+
+.doggoBio p {
+    color: #fff;
 }
 
 .holderBio {
@@ -235,12 +258,9 @@ section {
         padding: 0;
     }
 
-    .doggoImg {
-        box-shadow: 0 0 25px #000;
-    }
-
     #gallery span {
         padding-bottom: 40px;
+        font-size: 50px;
     }
 }
 
@@ -249,7 +269,7 @@ section {
 }
 
 footer {
-    background: #BF5700;
+    background: linear-gradient(to top, #BF5700 0%, rgba(0,0,0,.85) 100%);
     color: #fff;
     text-shadow: 2px 2px #000;
     display: flex;
