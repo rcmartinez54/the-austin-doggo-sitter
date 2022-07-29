@@ -207,7 +207,8 @@ section {
 
 #gallery span,
 .galContainer {
-    background: rgba(0, 0, 0, .85);
+    /* background: rgba(0, 0, 0, .85); */
+    background: #fff;
 }
 
 #gallery span {
@@ -217,7 +218,7 @@ section {
     font-size: 85px;
     padding: 50px 0;
     font-family: 'The Nautigal', cursive;
-    color: #fff;
+    color: #000;
 }
 
 .galContainer {
@@ -230,6 +231,8 @@ section {
 
 .galleryContain {
     width: 24%;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
 }
 
 .doggoImg {
@@ -244,7 +247,7 @@ section {
 }
 
 .doggoBio p {
-    color: #fff;
+    color: #000;
 }
 
 .holderBio {
