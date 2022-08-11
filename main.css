@@ -113,10 +113,15 @@ section {
     padding: 100px;
 }
 
+/* #about h2 {
+    text-decoration: underline;
+} */
+
 #about p {
     font-size: 28px;
     font-weight: bolder;
     font-family: 'Source Sans Pro', Sans-Serif;
+    line-height: 2;
 }
 
 #about .about_header {
@@ -233,6 +238,11 @@ section {
     width: 24%;
     border-bottom: 2px solid #000;
     margin-bottom: 20px;
+    background: #BF5700;
+}
+
+.galleryContain:last-child {
+    background: white;
 }
 
 .doggoImg {
@@ -247,7 +257,10 @@ section {
 }
 
 .doggoBio p {
-    color: #000;
+    color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 .holderBio {
